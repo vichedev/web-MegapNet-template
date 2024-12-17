@@ -18,7 +18,7 @@ export default function About() {
             En <span className="font-bold text-blue-600">MEGATNET</span>, nos
             dedicamos a ofrecer soluciones de conectividad confiables, rápidas y
             de alta calidad, liderando la innovación en telecomunicaciones con
-            <span className="font-bold text-blue-600"> Teleing S.A.</span>
+            <br /> <span className="font-bold text-blue-600">TELEING S.A.</span>
           </p>
         </motion.div>
 
@@ -32,9 +32,9 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <img
-              src="/img/about/mission-large.png" // Cambia esta ruta
+              src="/img/nosotros/mision.png" // Cambia esta ruta
               alt="Nuestra Misión"
-              className="w-24 h-24 mx-auto mb-6"
+              className="w-54 h-54 mx-auto mb-6"
             />
             <h3 className="text-3xl font-bold text-gray-800 mb-4">
               Nuestra Misión
@@ -54,9 +54,9 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <img
-              src="/img/about/vision-large.png" // Cambia esta ruta
+              src="/img/nosotros/vision.png" // Cambia esta ruta
               alt="Nuestra Visión"
-              className="w-24 h-24 mx-auto mb-6"
+              className="w-54 h-54 mx-auto mb-6"
             />
             <h3 className="text-3xl font-bold text-gray-800 mb-4">
               Nuestra Visión
@@ -75,9 +75,9 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <img
-              src="/img/about/values-large.png" // Cambia esta ruta
+              src="/img/nosotros/valores.png" // Cambia esta ruta
               alt="Nuestros Valores"
-              className="w-24 h-24 mx-auto mb-6"
+              className="w-54 h-54 mx-auto mb-6"
             />
             <h3 className="text-3xl font-bold text-gray-800 mb-4">
               Nuestros Valores
@@ -105,8 +105,10 @@ export default function About() {
             mejor experiencia en internet de alta velocidad. ¡Contáctanos hoy!
           </p>
           <a
-            href="#contact"
-            className="bg-white text-blue-600 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-gray-100 transition transform hover:scale-105"
+            href="https://wa.link/8wu3gv"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-blue-600 font-bold px-8 py-4 rounded-full shadow-lg  hover:bg-gray-100 transition transform hover:scale-105"
           >
             Contáctanos
           </a>

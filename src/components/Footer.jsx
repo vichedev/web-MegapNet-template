@@ -1,23 +1,23 @@
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-8">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start gap-8">
         {/* Logo y Descripción */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className="text-center md:text-left">
           <img
             src="/img/icon/logofooter.png"
             alt="Logo"
-            className="h-16 mb-4"
+            className="h-16 mb-4 mx-auto md:mx-0"
           />
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 max-w-xs">
             MEGATNET - Conectando el mundo con velocidad y confianza.
           </p>
         </div>
 
         {/* Enlaces Rápidos */}
-        <div>
+        <div className="text-center md:text-left">
           <h3 className="text-lg font-bold mb-4">Enlaces Rápidos</h3>
           <ul className="space-y-2">
             <li>
@@ -64,23 +64,33 @@ export default function Footer() {
         </div>
 
         {/* Contacto */}
-        <div>
+        <div className="text-center md:text-left">
           <h3 className="text-lg font-bold mb-4">Contáctanos</h3>
-          <p className="text-sm">Teléfono: +593999512324</p>
-          <p className="text-sm">Teléfono: +593992484732</p>
+          <a
+            href="tel:+593999512324"
+            className="block text-sm text-blue-400 hover:underline"
+          >
+            +593 999 512 324
+          </a>
+          <a
+            href="tel:+593992484732"
+            className="block text-sm text-blue-400 hover:underline"
+          >
+            +593 992 484 732
+          </a>
         </div>
 
-        {/* Redes Sociales */}
-        <div>
+        {/* Redes Sociales - Facebook */}
+        <div className="text-center md:text-left">
           <h3 className="text-lg font-bold mb-4">Síguenos</h3>
           <a
-            href="https://www.instagram.com"
+            href="https://www.facebook.com/share/14aq5Y5CMD/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center md:justify-start space-x-2 text-blue-400 hover:underline"
           >
-            <FaInstagram className="w-6 h-6" />
-            <span>Instagram</span>
+            <FaFacebook className="w-6 h-6" />
+            <span>Megapnet </span>
           </a>
         </div>
       </div>

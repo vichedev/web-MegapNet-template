@@ -59,13 +59,14 @@ export default function Location() {
         transition={{ duration: 0.8, delay: 0.3 }}
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d249.18633775469243!2d-79.92051363463214!3d-2.1607775835828025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scdla%20quisquis!5e0!3m2!1ses!2sec!4v1733796231788!5m2!1ses!2sec"
+          src="https://maps.google.com/maps?q=-2.15755391120911,-79.922248840332&hl=es&z=18&output=embed"
           width="100%"
           height="450"
-          className="rounded-lg shadow-lg border-0"
+          style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          className="rounded-lg"
         ></iframe>
       </motion.div>
     </section>
