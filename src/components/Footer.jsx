@@ -6,9 +6,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
         {/* Logo y Descripción */}
         <div className="flex flex-col items-center md:items-start">
-          <img src="/img/icon/logofooter.png" alt="Logo" className="h-16 mb-4" />
+          <img
+            src="/img/icon/logofooter.png"
+            alt="Logo"
+            className="h-16 mb-4"
+          />
           <p className="text-sm text-gray-400">
-            MegapNet - Conectando el mundo con velocidad y confianza.
+            MEGATNET - Conectando el mundo con velocidad y confianza.
           </p>
         </div>
 

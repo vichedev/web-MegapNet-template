@@ -43,8 +43,8 @@ function App() {
             <>
               <Hero />
               <About />
-              <Gallery />
               <Plans />
+              <Gallery />
               <Location />
               <Footer />
             </>

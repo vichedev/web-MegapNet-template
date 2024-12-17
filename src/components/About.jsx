@@ -15,7 +15,7 @@ export default function About() {
             ¿Quiénes Somos?
           </h2>
           <p className="text-lg md:text-xl text-gray-600 mt-4 max-w-3xl mx-auto">
-            En <span className="font-bold text-blue-600">MegapNet</span>, nos
+            En <span className="font-bold text-blue-600">MEGATNET</span>, nos
             dedicamos a ofrecer soluciones de conectividad confiables, rápidas y
             de alta calidad, liderando la innovación en telecomunicaciones con
             <span className="font-bold text-blue-600"> Teleing S.A.</span>
@@ -100,7 +100,7 @@ export default function About() {
             ¿Listo para conectarte al futuro?
           </h3>
           <p className="text-lg md:text-xl mb-6">
-            Con <span className="font-bold">MegapNet</span> y{" "}
+            Con <span className="font-bold">MEGATNET</span> y{" "}
             <span className="font-bold">Teleing S.A.</span>, disfrutarás de la
             mejor experiencia en internet de alta velocidad. ¡Contáctanos hoy!
           </p>

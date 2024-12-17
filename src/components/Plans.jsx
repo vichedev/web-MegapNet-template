@@ -3,12 +3,12 @@ import { useInView } from "react-intersection-observer";
 import ligaProLogo from "/img/ligapro.png";
 import zappingLogo from "/img/zapping.png";
 import bannerImage from "/img/banner.png";
-import basicImage from "/img/basic.png";
-import basicPlusImage from "/img/basicplus.png";
-import silverImage from "/img/silver.png";
-import goldImage from "/img/gold.png";
-import platinumImage from "/img/platinum.png";
-import diamondImage from "/img/diamond.png";
+import basicImage from "/img/planbasico.jpg";
+import basicPlusImage from "/img/planbasico+.jpg";
+import silverImage from "/img/plansilver.jpg";
+import goldImage from "/img/plangold.jpg";
+import platinumImage from "/img/planplatinum.jpg";
+import diamondImage from "/img/plandiamante.jpg";
 import installImage from "/img/beneficios/gratis.png";
 
 export default function Plans() {
@@ -182,7 +182,7 @@ export default function Plans() {
                   <img
                     src={plan.image}
                     alt={plan.name}
-                    className="w-full h-32 object-cover rounded-md mx-auto"
+                    className="w-full h-50 object-cover rounded-md mx-auto"
                   />
                 </div>
                 <div className="p-4 text-center">

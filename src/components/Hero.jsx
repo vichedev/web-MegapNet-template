@@ -18,8 +18,8 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center text-center px-4 mt-[64px]">
         {/* Logo */}
         <motion.img
-          src="/img/banner.png" // Cambia esta ruta al logo de MegapNet
-          alt="MegapNet"
+          src="/img/banner.png" // Cambia esta ruta al logo de MEGATNET
+          alt="MEGATNET"
           className="w-64 md:w-[450px] lg:w-[550px] mb-6"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -43,9 +43,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Con <span className="font-bold">MegapNet</span>, de{" "}
-          <span className="font-bold">Teleing S.A.</span>, disfruta de conexiones confiables,
-          rápidas y de calidad. ¡Lleva tu experiencia al siguiente nivel!
+          Con <span className="font-bold">MEGATNET</span>, de{" "}
+          <span className="font-bold">Teleing S.A.</span>, disfruta de
+          conexiones confiables, rápidas y de calidad. ¡Lleva tu experiencia al
+          siguiente nivel!
         </motion.p>
 
         {/* Botón */}
