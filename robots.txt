@@ -1,0 +1,13 @@
+User-agent: *
+Disallow:
+
+# Permitir todo menos una carpeta específica
+User-agent: *
+Disallow: /admin/
+
+# Bloquear archivos específicos
+Disallow: /confidencial.html
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://tusitio.com/sitemap.xml

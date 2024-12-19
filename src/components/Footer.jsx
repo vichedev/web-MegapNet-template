@@ -90,7 +90,7 @@ export default function Footer() {
             className="flex items-center justify-center md:justify-start space-x-2 text-blue-400 hover:underline"
           >
             <FaFacebook className="w-6 h-6" />
-            <span>Megapnet </span>
+            <span>Megatnet </span>
           </a>
         </div>
       </div>
@@ -99,9 +99,7 @@ export default function Footer() {
       <div className="text-center mt-8 text-sm text-gray-500">
         © {new Date().getFullYear()} Desarrollado por{" "}
         <a
-          href="https://www.inigualitysoft.com/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#"
           className="text-blue-400 hover:underline"
         >
           Inigualitysoft

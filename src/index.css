@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilo general de la barra */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento */
+  height: 8px; /* Altura para la barra horizontal */
+}
+
+/* Track (fondo de la barra) */
+::-webkit-scrollbar-track {
+  background: #e0f2fe; /* Azul claro */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Thumb (la parte deslizable) */
+::-webkit-scrollbar-thumb {
+  background: #3b82f6; /* Azul medio */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Thumb en hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; /* Azul oscuro en hover */
+}
+
+/* Estilo para navegadores Firefox */
+html {
+  scrollbar-color: #3b82f6 #e0f2fe; /* Thumb y track */
+  scrollbar-width: thin; /* Barra de desplazamiento fina */
+}

@@ -48,6 +48,7 @@ export default function Location() {
             📍 Dirección: Cdla Quisquis, Guayaquil, Ecuador
           </p>
           <p className="text-gray-600">📞 Teléfono: +593999512324</p>
+          <p className="text-gray-600">📞 Teléfono: +593992484732</p>
         </motion.div>
       </div>
 

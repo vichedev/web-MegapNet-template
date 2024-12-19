@@ -1,0 +1,13 @@
+services:
+  react-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8382:80" # Puerto externo (8180) al interno de Nginx (80)
+    networks:
+      - webnet
+    restart: always
+networks:
+  webnet:
+    driver: bridge
