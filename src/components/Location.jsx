@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Location() {
   return (
@@ -31,7 +32,7 @@ export default function Location() {
           <img
             src="/img/banner.png"
             alt="MEGATNET"
-            className="w-32 md:w-40 lg:w-48 mx-auto md:mx-0 mb-6"
+            className="w-64 md:w-80 lg:w-96 mx-auto md:mx-0 mb-6"
           />
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Nuestra Ubicación
@@ -44,11 +45,32 @@ export default function Location() {
             MEGATNET - Una empresa de{" "}
             <span className="text-blue-600">Teleing S.A.</span>
           </p>
-          <p className="text-gray-600">
-            📍 Dirección: Cdla Quisquis, Guayaquil, Ecuador
+          <p className="text-gray-600 flex items-center mb-4">
+            <FaMapMarkerAlt className="text-red-600 mr-2" />
+            <span>
+              Dirección: Cdla Quisquis, Guayaquil, Ecuador
+            </span>
           </p>
-          <p className="text-gray-600">📞 Teléfono: +593999512324</p>
-          <p className="text-gray-600">📞 Teléfono: +593992484732</p>
+          <div>
+            <p className="text-gray-600 flex items-center mb-2">
+              <FaPhoneAlt className="text-green-500 mr-2" />
+              <a href="tel:+593999512324" className="hover:underline">
+                +593999512324
+              </a>
+            </p>
+            <p className="text-gray-600 flex items-center mb-2">
+              <FaPhoneAlt className="text-green-500 mr-2" />
+              <a href="tel:+593992484732" className="hover:underline">
+                +593992484732
+              </a>
+            </p>
+            <p className="text-gray-600 flex items-center mb-2">
+              <FaEnvelope className="text-blue-600 mr-2" />
+              <a href="mailto:teleing@hotmail.com" className="hover:underline">
+                teleing@hotmail.com
+              </a>
+            </p>
+          </div>
         </motion.div>
       </div>
 

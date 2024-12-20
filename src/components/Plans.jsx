@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaMoon, FaWifi, FaSignal } from "react-icons/fa";
+import { FaMoon, FaWifi, FaSignal, FaNetworkWired } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import ligaProLogo from "/img/ligapro.png";
 import zappingLogo from "/img/zapping.png";
@@ -272,12 +272,21 @@ export default function Plans() {
 
                     {/* Características adicionales */}
                     <div className="flex items-start gap-3">
-                      <FaWifi className="text-purple-500 mt-1" size={20} />
+                      <FaNetworkWired className="text-purple-500 mt-1" size={20} />
                       <p className="text-sm text-gray-600 leading-5">
-                        Ej: 4G, doble banda ancha, acceso premium.
+                        Internet Inteligente Red XGPON
+                      </p>
+                    </div>
+                    {/* Características adicionales */}
+                    <div className="flex items-start gap-3">
+                      <FaWifi className="text-purple-500 mt-1" size={20} />
+
+                      <p className="text-sm text-gray-600 leading-5">
+                        Equipo Wifi 6 Premium
                       </p>
                     </div>
                   </div>
+
 
                   {/* Logos adicionales si están incluidos */}
                   {plan.included && (

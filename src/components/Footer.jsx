@@ -1,4 +1,4 @@
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -66,18 +66,33 @@ export default function Footer() {
         {/* Contacto */}
         <div className="text-center md:text-left">
           <h3 className="text-lg font-bold mb-4">Contáctanos</h3>
-          <a
-            href="tel:+593999512324"
-            className="block text-sm text-blue-400 hover:underline"
-          >
-            +593 999 512 324
-          </a>
-          <a
-            href="tel:+593992484732"
-            className="block text-sm text-blue-400 hover:underline"
-          >
-            +593 992 484 732
-          </a>
+          <p className="flex items-center justify-center md:justify-start space-x-2">
+            <FaPhoneAlt className="text-blue-400 w-5 h-5" />
+            <a
+              href="tel:+593999512324"
+              className="text-sm text-blue-400 hover:underline"
+            >
+              +593 999 512 324
+            </a>
+          </p>
+          <p className="flex items-center justify-center md:justify-start space-x-2 mt-2">
+            <FaPhoneAlt className="text-blue-400 w-5 h-5" />
+            <a
+              href="tel:+593992484732"
+              className="text-sm text-blue-400 hover:underline"
+            >
+              +593 992 484 732
+            </a>
+          </p>
+          <p className="flex items-center justify-center md:justify-start space-x-2 mt-2">
+            <FaEnvelope className="text-red-400 w-5 h-5" />
+            <a
+              href="mailto:teleing@hotmail.com"
+              className="text-sm text-blue-400 hover:underline"
+            >
+              teleing@hotmail.com
+            </a>
+          </p>
         </div>
 
         {/* Redes Sociales - Facebook */}
@@ -90,7 +105,7 @@ export default function Footer() {
             className="flex items-center justify-center md:justify-start space-x-2 text-blue-400 hover:underline"
           >
             <FaFacebook className="w-6 h-6" />
-            <span>Megatnet </span>
+            <span>Megatnet</span>
           </a>
         </div>
       </div>
@@ -98,10 +113,7 @@ export default function Footer() {
       {/* Línea de Derechos Reservados */}
       <div className="text-center mt-8 text-sm text-gray-500">
         © {new Date().getFullYear()} Desarrollado por{" "}
-        <a
-          href="#"
-          className="text-blue-400 hover:underline"
-        >
+        <a href="#" className="text-blue-400 hover:underline">
           Inigualitysoft
         </a>
       </div>
