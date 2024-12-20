@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaMoon, FaWifi, FaSignal } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import ligaProLogo from "/img/ligapro.png";
 import zappingLogo from "/img/zapping.png";
@@ -93,91 +94,148 @@ export default function Plans() {
   return (
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
+
         {/* Banner */}
         <InViewSection>
-          <img
+          <motion.img
             src={bannerImage}
             alt="Planes de Internet"
-            className="mx-auto w-full max-w-4xl mb-12"
+            className="mx-auto w-full max-w-5xl rounded-lg"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
           />
         </InViewSection>
 
         {/* Descripción */}
         <InViewSection>
-          <p className="text-center text-lg text-gray-600 mb-16">
-            Descubre nuestros planes de Internet que se ajustan a tus
-            necesidades. ¡Disfruta de alta velocidad, canales exclusivos y el
-            mejor entretenimiento con Liga Pro y Zapping!
-          </p>
+          <div className="mt-12 text-center">
+            <motion.p
+              className="text-2xl font-semibold text-gray-800 leading-relaxed max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Descubre nuestros planes de Internet que se ajustan a tus
+              necesidades. ¡Disfruta de alta velocidad, canales exclusivos y el
+              mejor entretenimiento con <span className="text-blue-600 font-bold">Liga Pro</span> y{" "}
+              <span className="text-pink-500 font-bold">Zapping</span>!
+            </motion.p>
+          </div>
         </InViewSection>
 
         {/* Beneficios */}
         <InViewSection>
-          <div className="text-center mb-16">
-            <h3 className="text-xl font-bold mb-6">Beneficios con nosotros:</h3>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+          <div className="mt-16">
+            <h3 className="text-4xl font-extrabold text-center text-blue-800 mb-8 uppercase tracking-wide">
+              BENEFICIOS QUE OFRECEMOS
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-12">
               {/* Velocidad */}
               <div className="text-center">
-                <img
+                <motion.img
                   src="/img/beneficios/velocidad.png"
                   alt="Velocidad"
-                  className="h-16 mx-auto mb-2"
+                  className="h-20 mx-auto mb-4"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
                 />
-                <p className="text-gray-700">Velocidad</p>
+                <p className="text-lg font-medium text-gray-700">Alta Velocidad</p>
               </div>
               {/* Seguridad */}
               <div className="text-center">
-                <img
+                <motion.img
                   src="/img/beneficios/seguridad.png"
                   alt="Seguridad"
-                  className="h-16 mx-auto mb-2"
+                  className="h-20 mx-auto mb-4"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.1 }}
                 />
-                <p className="text-gray-700">Seguridad</p>
+                <p className="text-lg font-medium text-gray-700">Máxima Seguridad</p>
               </div>
               {/* Servicio al Cliente */}
               <div className="text-center">
-                <img
+                <motion.img
                   src="/img/beneficios/servicio.png"
                   alt="Servicio al Cliente"
-                  className="h-16 mx-auto mb-2"
+                  className="h-20 mx-auto mb-4"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
                 />
-                <p className="text-gray-700">Servicio a cliente</p>
+                <p className="text-lg font-medium text-gray-700">
+                  Servicio al Cliente
+                </p>
               </div>
             </div>
-            <div className="mt-8">
-              <img
+            <div className="mt-12 text-center">
+              <motion.img
                 src={installImage}
                 alt="Instalación Gratis"
-                className="h-20 mx-auto"
+                className="h-24 mx-auto mb-4"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
               />
-              <p className="text-gray-700 font-bold mt-4">INSTALACIÓN GRATIS</p>
+              <p className="text-xl font-bold text-blue-600">
+                ¡INSTALACIÓN GRATIS!
+              </p>
             </div>
           </div>
         </InViewSection>
 
-        {/* Zapping y Liga Pro */}
         <InViewSection>
-          <div className="text-center mb-16">
-            <p className="font-bold text-lg text-gray-700">
+          <div className="mt-16 pb-16 text-center">
+            <motion.p
+              className="text-2xl font-bold text-gray-800"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+            >
               <span className="text-pink-500">ZAPPING</span> y{" "}
               <span className="text-yellow-500">Liga Pro</span>
-            </p>
-            <p className="text-gray-700">Incluido a partir de planes de $20.</p>
-            <div className="flex justify-center items-center mt-4 gap-4">
-              <img src={zappingLogo} alt="Zapping" className="h-12" />
-              <img src={ligaProLogo} alt="Liga Pro" className="h-12" />
+            </motion.p>
+            <motion.p
+              className="text-lg text-gray-700 mt-4"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              Incluido a partir de planes de $20.
+            </motion.p>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-6">
+              <motion.img
+                src={zappingLogo}
+                alt="Zapping"
+                className="h-16"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              />
+              <motion.img
+                src={ligaProLogo}
+                alt="Liga Pro"
+                className="h-16"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+              />
             </div>
           </div>
         </InViewSection>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
           {plans.map((plan, index) => (
             <InViewSection key={index}>
               <div className="bg-white shadow-lg rounded-lg overflow-hidden border hover:shadow-xl transition-all">
+                {/* Header con el nombre del plan */}
                 <div className={`p-4 text-white ${plan.color}`}>
                   <h3 className="text-lg font-bold text-center">{plan.name}</h3>
                 </div>
+
+                {/* Imagen del plan */}
                 <div className="p-4">
                   <img
                     src={plan.image}
@@ -185,12 +243,43 @@ export default function Plans() {
                     className="w-full h-50 object-cover rounded-md mx-auto"
                   />
                 </div>
-                <div className="p-4 text-center">
-                  <p className="text-2xl font-bold">{plan.price}</p>
-                  <p className="text-sm text-gray-600 mb-4">
-                    {plan.description}
-                  </p>
-                  <p className="text-sm text-gray-600 mb-4">{plan.speed}</p>
+
+                {/* Contenido principal */}
+                <div className="p-6 text-center">
+                  {/* Número de megas */}
+                  <p className="text-5xl font-bold text-blue-800">{plan.speed.split(" ")[0]}</p>
+                  <p className="text-sm text-gray-600">Megas</p>
+
+                  {/* Precio */}
+                  <p className="text-2xl font-bold mt-4">{plan.price}</p>
+                  <p className="text-sm text-gray-600">incl. IVA</p>
+
+                  {/* Descripción detallada */}
+                  <div className="mt-4 space-y-3 text-left">
+                    {/* Noches Vuela */}
+                    <div className="flex items-start gap-3">
+                      <FaMoon className="text-blue-500 mt-1" size={20} />
+                      <p className="text-sm text-gray-600 leading-5">
+                        <strong>Noches Vuela:</strong> Disfruta de hasta el doble de velocidad en tu ancho de banda de <strong>19:00 a 6:00 AM</strong>.
+                      </p>
+                    </div>
+
+                    {/* Velocidad */}
+                    <div className="flex items-start gap-3">
+                      <FaSignal className="text-green-500 mt-1" size={20} />
+                      <p className="text-sm text-gray-600 leading-5">{plan.description}</p>
+                    </div>
+
+                    {/* Características adicionales */}
+                    <div className="flex items-start gap-3">
+                      <FaWifi className="text-purple-500 mt-1" size={20} />
+                      <p className="text-sm text-gray-600 leading-5">
+                        Ej: 4G, doble banda ancha, acceso premium.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Logos adicionales si están incluidos */}
                   {plan.included && (
                     <div className="flex justify-center gap-4 mt-4">
                       <img src={ligaProLogo} alt="Liga Pro" className="h-8" />
@@ -198,10 +287,12 @@ export default function Plans() {
                     </div>
                   )}
                 </div>
+
+                {/* Botón de acción */}
                 <div className="p-4 text-center">
                   <button
                     onClick={() => handleWhatsAppClick(plan.whatsappMessage)}
-                    className={`w-full py-2 px-4 text-white font-bold rounded-md ${plan.color} hover:bg-opacity-90`}
+                    className={`w-full py-3 px-6 text-white font-bold rounded-lg ${plan.color} hover:bg-opacity-90`}
                   >
                     Contratar
                   </button>
@@ -210,6 +301,8 @@ export default function Plans() {
             </InViewSection>
           ))}
         </div>
+
+
       </div>
     </section>
   );

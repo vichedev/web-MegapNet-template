@@ -20,7 +20,7 @@ export default function Hero() {
         <motion.img
           src="/img/banner.png" // Cambia esta ruta al logo de MEGATNET
           alt="MEGATNET"
-          className="w-64 md:w-[450px] lg:w-[550px] mb-6"
+          className="w-full max-w-[800px] mb-6" // Logo máximo de 800px de ancho
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
@@ -38,7 +38,7 @@ export default function Hero() {
 
         {/* Subtítulo */}
         <motion.p
-          className="text-lg md:text-2xl mb-8 max-w-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600"
+          className="text-xl md:text-3xl font-medium mb-8 max-w-4xl text-gray-800"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
