@@ -60,6 +60,15 @@ export default function Footer() {
                 Mintel
               </a>
             </li>
+
+            <li>
+              <a
+                href="/parametros-calidad"
+                className="hover:underline"
+              >
+                Parámetros de calidad
+              </a>
+            </li>
           </ul>
         </div>
 
